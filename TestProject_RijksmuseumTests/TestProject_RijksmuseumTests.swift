@@ -14,9 +14,7 @@ import XCTest
 
 class MockNetworkService: NetworkServiceProtocol {
 
-  func getArtObjectDetails(objectNumber: String, completion: @escaping (Result<ArtObject, Swift.Error>) -> Void) {
-  
-  }
+  func getArtObjectDetails(objectNumber: String, completion: @escaping (Result<ArtObject, Swift.Error>) -> Void) {}
   
   var artObjects: [MuseumArtObject] = []
   
@@ -30,23 +28,28 @@ class DisplayResultController: CollectionViewControllerProtocol {
   var error: Error?
   var loadedObjects: [DisplayArtObject] = []
   
-  func displayArtObjects(_ viewModel: [DisplayArtObject]) {
+  func displayInitialArtObjects(_ viewModel: [DisplayArtObject]) {
     loadedObjects = viewModel
   }
   
   func displayDataLoadError(error: Error) {
     self.error = error
   }
+  
+  func displayNextArtObjects(_ viewModel: [DisplayArtObject]) {
+    
+  }
 }
 
 class TestProject_RijksmuseumTests: XCTestCase {
-  var viewModel: ArtObjectsListViewModel!
+  var viewModel: ListViewModel!
   var networkService = MockNetworkService()
-  lazy var data = ArtObjectsListModel(networkService: networkService)
+  lazy var data = ListModel(networkService: networkService)
   var displayResultController = DisplayResultController()
   
   override func setUpWithError() throws {
-    viewModel = ArtObjectsListViewModel(dataModel: data, viewController: displayResultController)
+    viewModel = ListViewModel(dataModel: data)
+    viewModel.delegate = displayResultController
     data.delegate = viewModel
   }
   
@@ -57,7 +60,7 @@ class TestProject_RijksmuseumTests: XCTestCase {
   func testReturnEmptyArray() throws {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    viewModel.loadData(page: 0)
+    viewModel.loadData()
     XCTAssertTrue(displayResultController.error == nil)
     XCTAssertTrue(displayResultController.loadedObjects.count == 0)
   }
@@ -73,7 +76,7 @@ class TestProject_RijksmuseumTests: XCTestCase {
     
 
     //_ = self.expectation(description: "Scaling")
-    viewModel.loadData(page: 0)
+    viewModel.loadData()
     //waitForExpectations(timeout: 5, handler: nil)
   
     XCTAssertTrue(displayResultController.error == nil)

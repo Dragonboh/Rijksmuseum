@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Alamofire
+import AlamofireImage
 
 let apiKey = "0fiuZFh4"
 let objectsPerPage = "100"
@@ -38,33 +40,32 @@ class NetworkService: NetworkServiceProtocol {
       return
     }
     
-    URLSession.shared.dataTask(with: URLRequest(url: getURL)) { data, response, error in
-      if let error = error {
-        completion(.failure(error))
-        return
-      }
-      
-      guard
-        (response as? HTTPURLResponse) != nil,
-        let data = data
-      else {
-        completion(.failure(Error.unknownAPIResponse))
-        return
-      }
-      
-      do {
-        //data = self.readLocalFile(forName: "offlineData")!
-        let decoder = JSONDecoder()
-        let artObjects = try decoder.decode(MuseumArtObjects.self, from: data)
-        //print(artObjects)
-        completion(.success(artObjects))
-        return
-      } catch {
-        completion(.failure(error))
-        return
+    AF.request(getURL).responseJSON { response in
+      switch response.result {
+      case .success:
+        print("Validation Successful")
+        guard
+          response.response != nil,
+          let data = response.data
+        else {
+          completion(.failure(Error.unknownAPIResponse))
+          return
+        }
+        
+        do {
+          //data = self.readLocalFile(forName: "offlineData")!
+          let decoder = JSONDecoder()
+          let artObjects = try decoder.decode(MuseumArtObjects.self, from: data)
+          completion(.success(artObjects))
+          return
+        } catch {
+          completion(.failure(error))
+          return
+        }
+      case let .failure(error):
+        print(error)
       }
     }
-    .resume()
   }
   
   func getArtObjectDetails(objectNumber: String, completion: @escaping (Result<ArtObject, Swift.Error>) -> Void) {
@@ -73,33 +74,32 @@ class NetworkService: NetworkServiceProtocol {
       return
     }
     
-    URLSession.shared.dataTask(with: URLRequest(url: getURL)) { data, response, error in
-      if let error = error {
-        completion(.failure(error))
-        return
-      }
-      
-      guard
-        (response as? HTTPURLResponse) != nil,
-        let data = data
-      else {
-        completion(.failure(Error.unknownAPIResponse))
-        return
-      }
-      
-      do {
-        //data = self.readLocalFile(forName: "offlineData")!
-        let decoder = JSONDecoder()
-        let artObjects = try decoder.decode(ArtObject.self, from: data)
-        //print(artObjects)
-        completion(.success(artObjects))
-        return
-      } catch {
-        completion(.failure(error))
-        return
+    AF.request(getURL).responseJSON { response in
+      switch response.result {
+      case .success:
+        print("Validation Successful")
+        guard
+          response.response != nil,
+          let data = response.data
+        else {
+          completion(.failure(Error.unknownAPIResponse))
+          return
+        }
+        
+        do {
+          //data = self.readLocalFile(forName: "offlineData")!
+          let decoder = JSONDecoder()
+          let artObjects = try decoder.decode(ArtObject.self, from: data)
+          completion(.success(artObjects))
+          return
+        } catch {
+          completion(.failure(error))
+          return
+        }
+      case let .failure(error):
+        print(error)
       }
     }
-    .resume()
   }
   
   private func readLocalFile(forName name: String) -> Data? {
