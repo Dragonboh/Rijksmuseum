@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests : NSObject
+@end
+@implementation PodsDummy_Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests
+@end

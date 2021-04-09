@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1207297D261B435600EB05B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207297C261B435600EB05B9 /* AppDelegate.swift */; };
+		1207297F261B435600EB05B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207297E261B435600EB05B9 /* SceneDelegate.swift */; };
+		12072981261B435600EB05B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12072980261B435600EB05B9 /* ViewController.swift */; };
+		12072984261B435600EB05B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12072982261B435600EB05B9 /* Main.storyboard */; };
+		12072986261B435800EB05B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12072985261B435800EB05B9 /* Assets.xcassets */; };
+		12072989261B435800EB05B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12072987261B435800EB05B9 /* LaunchScreen.storyboard */; };
+		12072994261B435900EB05B9 /* TestProject_RijksmuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12072993261B435900EB05B9 /* TestProject_RijksmuseumTests.swift */; };
+		1207299F261B435900EB05B9 /* TestProject_RijksmuseumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1207299E261B435900EB05B9 /* TestProject_RijksmuseumUITests.swift */; };
+		120729B0261B448600EB05B9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120729AF261B448600EB05B9 /* CollectionViewController.swift */; };
+		120729B8261B537300EB05B9 /* DomainEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120729B7261B537300EB05B9 /* DomainEntities.swift */; };
+		120729BD261B543700EB05B9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120729BC261B543700EB05B9 /* NetworkService.swift */; };
+		1228461B261CBBC900A5AEB5 /* ArtObjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228461A261CBBC900A5AEB5 /* ArtObjectCell.swift */; };
+		1289569C2620373300BA4ED5 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1289569B2620373300BA4ED5 /* Storyboarded.swift */; };
+		12A9E2A6261D0BEA00566228 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E2A5261D0BEA00566228 /* ListViewModel.swift */; };
+		12A9E2B4261DBAD800566228 /* offlineData.json in Resources */ = {isa = PBXBuildFile; fileRef = 12A9E2B3261DBAD800566228 /* offlineData.json */; };
+		12A9E2ED261E1F6800566228 /* DisplayListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E2EC261E1F6800566228 /* DisplayListModels.swift */; };
+		12A9E2F5261E202100566228 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E2F4261E202100566228 /* ListModel.swift */; };
+		12A9E304261F5FF800566228 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E303261F5FF800566228 /* Router.swift */; };
+		12A9E30A261F68E100566228 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E309261F68E100566228 /* DetailsViewController.swift */; };
+		12A9E31E261FAFC900566228 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E31D261FAFC900566228 /* DetailsViewModel.swift */; };
+		12A9E323261FB07500566228 /* DetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E322261FB07500566228 /* DetailsModel.swift */; };
+		12A9E33A261FBF0C00566228 /* DisplayDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A9E339261FBF0C00566228 /* DisplayDetailsModel.swift */; };
+		2F63DB0E279ED53FBD603E14 /* Pods_TestProject_RijksmuseumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEE6580E725F41FB8EAF402 /* Pods_TestProject_RijksmuseumTests.framework */; };
+		3E6C031F63FDF89B30F4267C /* Pods_TestProject_Rijksmuseum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F23A136B38340981730FF73 /* Pods_TestProject_Rijksmuseum.framework */; };
+		446784A9D2B4BD321088C424 /* Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D5AD50245DF42ED885DCE5 /* Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12072990261B435900EB05B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12072971261B435600EB05B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12072978261B435600EB05B9;
+			remoteInfo = TestProject_Rijksmuseum;
+		};
+		1207299B261B435900EB05B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12072971261B435600EB05B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12072978261B435600EB05B9;
+			remoteInfo = TestProject_Rijksmuseum;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0188EF202F359C37FD5F6F37 /* Pods-TestProject_Rijksmuseum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject_Rijksmuseum.debug.xcconfig"; path = "Target Support Files/Pods-TestProject_Rijksmuseum/Pods-TestProject_Rijksmuseum.debug.xcconfig"; sourceTree = "<group>"; };
+		0F23A136B38340981730FF73 /* Pods_TestProject_Rijksmuseum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject_Rijksmuseum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12072979261B435600EB05B9 /* TestProject_Rijksmuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject_Rijksmuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1207297C261B435600EB05B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1207297E261B435600EB05B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		12072980261B435600EB05B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12072983261B435600EB05B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12072985261B435800EB05B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12072988261B435800EB05B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1207298A261B435800EB05B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1207298F261B435900EB05B9 /* TestProject_RijksmuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProject_RijksmuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12072993261B435900EB05B9 /* TestProject_RijksmuseumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProject_RijksmuseumTests.swift; sourceTree = "<group>"; };
+		12072995261B435900EB05B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1207299A261B435900EB05B9 /* TestProject_RijksmuseumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProject_RijksmuseumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1207299E261B435900EB05B9 /* TestProject_RijksmuseumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProject_RijksmuseumUITests.swift; sourceTree = "<group>"; };
+		120729A0261B435900EB05B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120729AF261B448600EB05B9 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		120729B7261B537300EB05B9 /* DomainEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainEntities.swift; sourceTree = "<group>"; };
+		120729BC261B543700EB05B9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1228461A261CBBC900A5AEB5 /* ArtObjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObjectCell.swift; sourceTree = "<group>"; };
+		1289569B2620373300BA4ED5 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		12A9E2A5261D0BEA00566228 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		12A9E2B3261DBAD800566228 /* offlineData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = offlineData.json; sourceTree = "<group>"; };
+		12A9E2EC261E1F6800566228 /* DisplayListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayListModels.swift; sourceTree = "<group>"; };
+		12A9E2F4261E202100566228 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		12A9E303261F5FF800566228 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		12A9E309261F68E100566228 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		12A9E31D261FAFC900566228 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		12A9E322261FB07500566228 /* DetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModel.swift; sourceTree = "<group>"; };
+		12A9E339261FBF0C00566228 /* DisplayDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDetailsModel.swift; sourceTree = "<group>"; };
+		17A6A918D77197CB5FD106C0 /* Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		36B28979F59DC5307CA92185 /* Pods-TestProject_RijksmuseumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject_RijksmuseumTests.release.xcconfig"; path = "Target Support Files/Pods-TestProject_RijksmuseumTests/Pods-TestProject_RijksmuseumTests.release.xcconfig"; sourceTree = "<group>"; };
+		45A4CCB4A22ABF882D4C35FE /* Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.release.xcconfig"; path = "Target Support Files/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6CBF56A6E6CCAE0E4115CC34 /* Pods-TestProject_Rijksmuseum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject_Rijksmuseum.release.xcconfig"; path = "Target Support Files/Pods-TestProject_Rijksmuseum/Pods-TestProject_Rijksmuseum.release.xcconfig"; sourceTree = "<group>"; };
+		74D5AD50245DF42ED885DCE5 /* Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEE6580E725F41FB8EAF402 /* Pods_TestProject_RijksmuseumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject_RijksmuseumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F465842E30CA909775FF812C /* Pods-TestProject_RijksmuseumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject_RijksmuseumTests.debug.xcconfig"; path = "Target Support Files/Pods-TestProject_RijksmuseumTests/Pods-TestProject_RijksmuseumTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12072976261B435600EB05B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6C031F63FDF89B30F4267C /* Pods_TestProject_Rijksmuseum.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1207298C261B435900EB05B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F63DB0E279ED53FBD603E14 /* Pods_TestProject_RijksmuseumTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12072997261B435900EB05B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446784A9D2B4BD321088C424 /* Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12072970261B435600EB05B9 = {
+			isa = PBXGroup;
+			children = (
+				1207297B261B435600EB05B9 /* TestProject_Rijksmuseum */,
+				12072992261B435900EB05B9 /* TestProject_RijksmuseumTests */,
+				1207299D261B435900EB05B9 /* TestProject_RijksmuseumUITests */,
+				1207297A261B435600EB05B9 /* Products */,
+				E28416E6D1536585E5324E32 /* Pods */,
+				613A052F7E74D63E1E69808C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1207297A261B435600EB05B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12072979261B435600EB05B9 /* TestProject_Rijksmuseum.app */,
+				1207298F261B435900EB05B9 /* TestProject_RijksmuseumTests.xctest */,
+				1207299A261B435900EB05B9 /* TestProject_RijksmuseumUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1207297B261B435600EB05B9 /* TestProject_Rijksmuseum */ = {
+			isa = PBXGroup;
+			children = (
+				12A9E332261FBE1D00566228 /* Services */,
+				12A9E308261F688100566228 /* ArtObjectDetails */,
+				12A9E2E8261E1F0500566228 /* Entities */,
+				12A9E2A4261D0B8800566228 /* ArtObjectsList */,
+				1207297C261B435600EB05B9 /* AppDelegate.swift */,
+				1207297E261B435600EB05B9 /* SceneDelegate.swift */,
+				12072980261B435600EB05B9 /* ViewController.swift */,
+				1289569B2620373300BA4ED5 /* Storyboarded.swift */,
+				12A9E303261F5FF800566228 /* Router.swift */,
+				12072982261B435600EB05B9 /* Main.storyboard */,
+				12072985261B435800EB05B9 /* Assets.xcassets */,
+				12072987261B435800EB05B9 /* LaunchScreen.storyboard */,
+				1207298A261B435800EB05B9 /* Info.plist */,
+				12A9E2B3261DBAD800566228 /* offlineData.json */,
+			);
+			path = TestProject_Rijksmuseum;
+			sourceTree = "<group>";
+		};
+		12072992261B435900EB05B9 /* TestProject_RijksmuseumTests */ = {
+			isa = PBXGroup;
+			children = (
+				12072993261B435900EB05B9 /* TestProject_RijksmuseumTests.swift */,
+				12072995261B435900EB05B9 /* Info.plist */,
+			);
+			path = TestProject_RijksmuseumTests;
+			sourceTree = "<group>";
+		};
+		1207299D261B435900EB05B9 /* TestProject_RijksmuseumUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1207299E261B435900EB05B9 /* TestProject_RijksmuseumUITests.swift */,
+				120729A0261B435900EB05B9 /* Info.plist */,
+			);
+			path = TestProject_RijksmuseumUITests;
+			sourceTree = "<group>";
+		};
+		12A9E2A4261D0B8800566228 /* ArtObjectsList */ = {
+			isa = PBXGroup;
+			children = (
+				120729AF261B448600EB05B9 /* CollectionViewController.swift */,
+				12A9E2A5261D0BEA00566228 /* ListViewModel.swift */,
+				12A9E2F4261E202100566228 /* ListModel.swift */,
+				1228461A261CBBC900A5AEB5 /* ArtObjectCell.swift */,
+				12A9E2EC261E1F6800566228 /* DisplayListModels.swift */,
+			);
+			path = ArtObjectsList;
+			sourceTree = "<group>";
+		};
+		12A9E2E8261E1F0500566228 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				120729B7261B537300EB05B9 /* DomainEntities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		12A9E308261F688100566228 /* ArtObjectDetails */ = {
+			isa = PBXGroup;
+			children = (
+				12A9E309261F68E100566228 /* DetailsViewController.swift */,
+				12A9E31D261FAFC900566228 /* DetailsViewModel.swift */,
+				12A9E322261FB07500566228 /* DetailsModel.swift */,
+				12A9E339261FBF0C00566228 /* DisplayDetailsModel.swift */,
+			);
+			path = ArtObjectDetails;
+			sourceTree = "<group>";
+		};
+		12A9E332261FBE1D00566228 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				120729BC261B543700EB05B9 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		613A052F7E74D63E1E69808C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F23A136B38340981730FF73 /* Pods_TestProject_Rijksmuseum.framework */,
+				74D5AD50245DF42ED885DCE5 /* Pods_TestProject_Rijksmuseum_TestProject_RijksmuseumUITests.framework */,
+				EBEE6580E725F41FB8EAF402 /* Pods_TestProject_RijksmuseumTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E28416E6D1536585E5324E32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0188EF202F359C37FD5F6F37 /* Pods-TestProject_Rijksmuseum.debug.xcconfig */,
+				6CBF56A6E6CCAE0E4115CC34 /* Pods-TestProject_Rijksmuseum.release.xcconfig */,
+				17A6A918D77197CB5FD106C0 /* Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.debug.xcconfig */,
+				45A4CCB4A22ABF882D4C35FE /* Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.release.xcconfig */,
+				F465842E30CA909775FF812C /* Pods-TestProject_RijksmuseumTests.debug.xcconfig */,
+				36B28979F59DC5307CA92185 /* Pods-TestProject_RijksmuseumTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12072978261B435600EB05B9 /* TestProject_Rijksmuseum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120729A3261B435900EB05B9 /* Build configuration list for PBXNativeTarget "TestProject_Rijksmuseum" */;
+			buildPhases = (
+				A9E6BF0F910B0645E730DF3F /* [CP] Check Pods Manifest.lock */,
+				12072975261B435600EB05B9 /* Sources */,
+				12072976261B435600EB05B9 /* Frameworks */,
+				12072977261B435600EB05B9 /* Resources */,
+				87A8D3653AB5F5AD83EE9B88 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestProject_Rijksmuseum;
+			productName = TestProject_Rijksmuseum;
+			productReference = 12072979261B435600EB05B9 /* TestProject_Rijksmuseum.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1207298E261B435900EB05B9 /* TestProject_RijksmuseumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120729A6261B435900EB05B9 /* Build configuration list for PBXNativeTarget "TestProject_RijksmuseumTests" */;
+			buildPhases = (
+				333BD9EF06AD824018669F0F /* [CP] Check Pods Manifest.lock */,
+				1207298B261B435900EB05B9 /* Sources */,
+				1207298C261B435900EB05B9 /* Frameworks */,
+				1207298D261B435900EB05B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12072991261B435900EB05B9 /* PBXTargetDependency */,
+			);
+			name = TestProject_RijksmuseumTests;
+			productName = TestProject_RijksmuseumTests;
+			productReference = 1207298F261B435900EB05B9 /* TestProject_RijksmuseumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		12072999261B435900EB05B9 /* TestProject_RijksmuseumUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 120729A9261B435900EB05B9 /* Build configuration list for PBXNativeTarget "TestProject_RijksmuseumUITests" */;
+			buildPhases = (
+				1BA11558C0F47BADF8803624 /* [CP] Check Pods Manifest.lock */,
+				12072996261B435900EB05B9 /* Sources */,
+				12072997261B435900EB05B9 /* Frameworks */,
+				12072998261B435900EB05B9 /* Resources */,
+				291282E65F29ED85B7D8D77A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1207299C261B435900EB05B9 /* PBXTargetDependency */,
+			);
+			name = TestProject_RijksmuseumUITests;
+			productName = TestProject_RijksmuseumUITests;
+			productReference = 1207299A261B435900EB05B9 /* TestProject_RijksmuseumUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12072971261B435600EB05B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					12072978261B435600EB05B9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1207298E261B435900EB05B9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 12072978261B435600EB05B9;
+					};
+					12072999261B435900EB05B9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 12072978261B435600EB05B9;
+					};
+				};
+			};
+			buildConfigurationList = 12072974261B435600EB05B9 /* Build configuration list for PBXProject "TestProject_Rijksmuseum" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12072970261B435600EB05B9;
+			productRefGroup = 1207297A261B435600EB05B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12072978261B435600EB05B9 /* TestProject_Rijksmuseum */,
+				1207298E261B435900EB05B9 /* TestProject_RijksmuseumTests */,
+				12072999261B435900EB05B9 /* TestProject_RijksmuseumUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12072977261B435600EB05B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12072989261B435800EB05B9 /* LaunchScreen.storyboard in Resources */,
+				12A9E2B4261DBAD800566228 /* offlineData.json in Resources */,
+				12072986261B435800EB05B9 /* Assets.xcassets in Resources */,
+				12072984261B435600EB05B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1207298D261B435900EB05B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12072998261B435900EB05B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BA11558C0F47BADF8803624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		291282E65F29ED85B7D8D77A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests/Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		333BD9EF06AD824018669F0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestProject_RijksmuseumTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A8D3653AB5F5AD83EE9B88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestProject_Rijksmuseum/Pods-TestProject_Rijksmuseum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestProject_Rijksmuseum/Pods-TestProject_Rijksmuseum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestProject_Rijksmuseum/Pods-TestProject_Rijksmuseum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E6BF0F910B0645E730DF3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestProject_Rijksmuseum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12072975261B435600EB05B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A9E304261F5FF800566228 /* Router.swift in Sources */,
+				1228461B261CBBC900A5AEB5 /* ArtObjectCell.swift in Sources */,
+				12A9E2A6261D0BEA00566228 /* ListViewModel.swift in Sources */,
+				12A9E2F5261E202100566228 /* ListModel.swift in Sources */,
+				12A9E323261FB07500566228 /* DetailsModel.swift in Sources */,
+				1289569C2620373300BA4ED5 /* Storyboarded.swift in Sources */,
+				12A9E31E261FAFC900566228 /* DetailsViewModel.swift in Sources */,
+				120729BD261B543700EB05B9 /* NetworkService.swift in Sources */,
+				12A9E2ED261E1F6800566228 /* DisplayListModels.swift in Sources */,
+				12072981261B435600EB05B9 /* ViewController.swift in Sources */,
+				1207297D261B435600EB05B9 /* AppDelegate.swift in Sources */,
+				120729B0261B448600EB05B9 /* CollectionViewController.swift in Sources */,
+				120729B8261B537300EB05B9 /* DomainEntities.swift in Sources */,
+				12A9E30A261F68E100566228 /* DetailsViewController.swift in Sources */,
+				12A9E33A261FBF0C00566228 /* DisplayDetailsModel.swift in Sources */,
+				1207297F261B435600EB05B9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1207298B261B435900EB05B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12072994261B435900EB05B9 /* TestProject_RijksmuseumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12072996261B435900EB05B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1207299F261B435900EB05B9 /* TestProject_RijksmuseumUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12072991261B435900EB05B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12072978261B435600EB05B9 /* TestProject_Rijksmuseum */;
+			targetProxy = 12072990261B435900EB05B9 /* PBXContainerItemProxy */;
+		};
+		1207299C261B435900EB05B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12072978261B435600EB05B9 /* TestProject_Rijksmuseum */;
+			targetProxy = 1207299B261B435900EB05B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12072982261B435600EB05B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12072983261B435600EB05B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12072987261B435800EB05B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12072988261B435800EB05B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		120729A1261B435900EB05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		120729A2261B435900EB05B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		120729A4261B435900EB05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0188EF202F359C37FD5F6F37 /* Pods-TestProject_Rijksmuseum.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WPKFQ65J6;
+				INFOPLIST_FILE = TestProject_Rijksmuseum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan.pankevych.TestProject-Rijksmuseum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		120729A5261B435900EB05B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CBF56A6E6CCAE0E4115CC34 /* Pods-TestProject_Rijksmuseum.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WPKFQ65J6;
+				INFOPLIST_FILE = TestProject_Rijksmuseum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan.pankevych.TestProject-Rijksmuseum";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		120729A7261B435900EB05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F465842E30CA909775FF812C /* Pods-TestProject_RijksmuseumTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestProject_RijksmuseumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan.pankevych.TestProject-RijksmuseumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestProject_Rijksmuseum.app/TestProject_Rijksmuseum";
+			};
+			name = Debug;
+		};
+		120729A8261B435900EB05B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B28979F59DC5307CA92185 /* Pods-TestProject_RijksmuseumTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestProject_RijksmuseumTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan.pankevych.TestProject-RijksmuseumTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestProject_Rijksmuseum.app/TestProject_Rijksmuseum";
+			};
+			name = Release;
+		};
+		120729AA261B435900EB05B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A6A918D77197CB5FD106C0 /* Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestProject_RijksmuseumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan.pankevych.TestProject-RijksmuseumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestProject_Rijksmuseum;
+			};
+			name = Debug;
+		};
+		120729AB261B435900EB05B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A4CCB4A22ABF882D4C35FE /* Pods-TestProject_Rijksmuseum-TestProject_RijksmuseumUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestProject_RijksmuseumUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bogdan.pankevych.TestProject-RijksmuseumUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestProject_Rijksmuseum;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12072974261B435600EB05B9 /* Build configuration list for PBXProject "TestProject_Rijksmuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120729A1261B435900EB05B9 /* Debug */,
+				120729A2261B435900EB05B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120729A3261B435900EB05B9 /* Build configuration list for PBXNativeTarget "TestProject_Rijksmuseum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120729A4261B435900EB05B9 /* Debug */,
+				120729A5261B435900EB05B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120729A6261B435900EB05B9 /* Build configuration list for PBXNativeTarget "TestProject_RijksmuseumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120729A7261B435900EB05B9 /* Debug */,
+				120729A8261B435900EB05B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		120729A9261B435900EB05B9 /* Build configuration list for PBXNativeTarget "TestProject_RijksmuseumUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				120729AA261B435900EB05B9 /* Debug */,
+				120729AB261B435900EB05B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12072971261B435600EB05B9 /* Project object */;
+}

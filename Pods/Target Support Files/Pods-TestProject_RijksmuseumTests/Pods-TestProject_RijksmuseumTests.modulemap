@@ -1,0 +1,6 @@
+framework module Pods_TestProject_RijksmuseumTests {
+  umbrella header "Pods-TestProject_RijksmuseumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

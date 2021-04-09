@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "88BAE6FF-BB6A-4750-A65A-065304FDACCA"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66F1D638-7007-4DCD-BE99-C6BDE3EC2A64"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/ArtObjectsList/MuseumCollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA58711A-E34A-49BD-BE14-8A4CFC91549C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "prepareDisplayModel(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB6B366D-5AAF-42B2-87AE-37A0FEFA06A8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "onDetailsDataLoadCompleted(result:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB6B366D-5AAF-42B2-87AE-37A0FEFA06A8 - 1be2f510364e380f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestProject_Rijksmuseum.DetailsListViewModel.onDetailsDataLoadCompleted(result: Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "213">
+               </Location>
+               <Location
+                  uuid = "EB6B366D-5AAF-42B2-87AE-37A0FEFA06A8 - 1be2f510364e380f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestProject_Rijksmuseum.DetailsListViewModel.onDetailsDataLoadCompleted(result: Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "263">
+               </Location>
+               <Location
+                  uuid = "EB6B366D-5AAF-42B2-87AE-37A0FEFA06A8 - 1be2f510364e380f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestProject_Rijksmuseum.DetailsListViewModel.onDetailsDataLoadCompleted(result: Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "862">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CE2570D-10DA-4FAC-AF26-184FBCC217FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/ArtObjectsList/ListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "showArtObjectDetails(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02C0B3A5-8BAF-4144-92DB-09920F582FF8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "onDetailsDataLoadCompleted(result:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "02C0B3A5-8BAF-4144-92DB-09920F582FF8 - 1be2f510364e382e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestProject_Rijksmuseum.DetailsListViewModel.onDetailsDataLoadCompleted(result: Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "310">
+               </Location>
+               <Location
+                  uuid = "02C0B3A5-8BAF-4144-92DB-09920F582FF8 - 1944d736611945a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TestProject_Rijksmuseum.DetailsListViewModel.onDetailsDataLoadCompleted(result: Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/ArtObjectDetails/DetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4987BB32-7C36-4EB4-8D94-216CCC98CE66"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/Services/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getArtObjectDetailsURL(objectNumber:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A4D03644-6102-4072-AE0E-D108FF864DB4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestProject_Rijksmuseum/Services/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "getArtObjectDetails(objectNumber:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A4D03644-6102-4072-AE0E-D108FF864DB4 - f01c57575294d89d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestProject_Rijksmuseum.NetworkService.getArtObjectDetails(objectNumber: Swift.String, completion: (Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/Services/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "A4D03644-6102-4072-AE0E-D108FF864DB4 - 627eacfa5c9177f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in TestProject_Rijksmuseum.NetworkService.getArtObjectDetails(objectNumber: Swift.String, completion: (Swift.Result&lt;TestProject_Rijksmuseum.ArtObject, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "TestProject_Rijksmuseum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bogdanpankevych/Documents/tutorials/TestProject_Rijksmuseum/TestProject_Rijksmuseum/Services/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "321">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
