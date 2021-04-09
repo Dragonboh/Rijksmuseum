@@ -7,20 +7,25 @@
 
 import Foundation
 
-protocol ArtObjectsListViewModelProtocol: class {
-  func loadData(page: Int)
-  func onDataLoadCompleted(result: Result<MuseumArtObjects, Swift.Error>)
+protocol ListViewModelProtocol: class {
+  func loadData()
   func showArtObjectDetails(index: Int)
+  func loadNextPageData()
 }
 
-class ArtObjectsListViewModel: ArtObjectsListViewModelProtocol {
-  private(set) var dataModel: ArtObjectsListModelProtocol
+protocol ListViewModelDelegateProtocol: class {
+  func onDataLoadCompleted(result: Result<MuseumArtObjects, Swift.Error>)
+}
+
+class ListViewModel {
+  private(set) var dataModel: ListModelProtocol
   
   // Your viewController
   weak var delegate: CollectionViewControllerProtocol?
   private var data = [MuseumArtObject]()
+  private var currentPage = 1
   
-  init(dataModel: ArtObjectsListModelProtocol) {
+  init(dataModel: ListModelProtocol) {
     self.dataModel = dataModel
   }
   
@@ -36,11 +41,10 @@ class ArtObjectsListViewModel: ArtObjectsListViewModelProtocol {
     }
     return displayModel
   }
-  
-  func showArtObjectDetails(index: Int) {
-    showDetails?(data[index].objectNumber)
-  }
-  
+}
+
+// MARK: - ListViewModelDelegateProtocol
+extension ListViewModel: ListViewModelDelegateProtocol {
   func onDataLoadCompleted(result: Result<MuseumArtObjects, Swift.Error>) {
     switch result {
     case .failure(let error) :
@@ -53,12 +57,26 @@ class ArtObjectsListViewModel: ArtObjectsListViewModelProtocol {
       data.append(contentsOf: artObjects.artObjects)
       
       DispatchQueue.main.async { [weak self] in
-        self?.delegate?.displayArtObjects(displayModel)
+        self?.currentPage == 1
+          ? self?.delegate?.displayInitialArtObjects(displayModel)
+          : self?.delegate?.displayNextArtObjects(displayModel)
       }
     }
   }
+}
+
+// MARK: - ListViewModelProtocol
+extension ListViewModel: ListViewModelProtocol {
+  func showArtObjectDetails(index: Int) {
+    showDetails?(data[index].objectNumber)
+  }
   
-  func loadData(page: Int) {
-    dataModel.loadData(page: page)
+  func loadData() {
+    dataModel.loadData(page: currentPage)
+  }
+  
+  func loadNextPageData() {
+    currentPage += 1
+    loadData()
   }
 }

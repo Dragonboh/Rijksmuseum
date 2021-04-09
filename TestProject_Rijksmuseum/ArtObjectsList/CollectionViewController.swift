@@ -10,7 +10,8 @@ import Alamofire
 import AlamofireImage
 
 protocol CollectionViewControllerProtocol: class {
-  func displayArtObjects(_ viewModel: [DisplayArtObject])
+  func displayInitialArtObjects(_ viewModel: [DisplayArtObject])
+  func displayNextArtObjects(_ viewModel: [DisplayArtObject])
   func displayDataLoadError(error: Swift.Error)
 }
 
@@ -21,9 +22,7 @@ class MuseumCollectionViewController: UICollectionViewController, Storyboarded  
   
   private let reuseIdentifier = "ArtObjectCell"
   private var artObjects = [DisplayArtObject]()
-  private var currentPage = 0
-  
-  var viewModel: ArtObjectsListViewModelProtocol?
+  var viewModel: ListViewModelProtocol?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,14 +37,12 @@ class MuseumCollectionViewController: UICollectionViewController, Storyboarded  
     activityIndicator?.startAnimating()
     
     // get data
-    viewModel?.loadData(page: currentPage)
+    viewModel?.loadData()
   }
   
   func getNextPageData() {
-    currentPage += 1
-    
     // get data
-    viewModel?.loadData(page: currentPage)
+    viewModel?.loadNextPageData()
   }
   
   // MARK: UICollectionViewDataSource
@@ -57,13 +54,12 @@ class MuseumCollectionViewController: UICollectionViewController, Storyboarded  
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtObjectCell
     
-    if indexPath.row == artObjects.count / 2 {
+    if indexPath.row == artObjects.count - 50 {
       getNextPageData()
     }
     
     cell.title.text = artObjects[indexPath.row].title
     AF.request(artObjects[indexPath.row].url).responseImage { response in
-      //print(response)
       if case .success(let image) = response.result {
         DispatchQueue.main.async {
           cell.image.image = image
@@ -77,7 +73,6 @@ class MuseumCollectionViewController: UICollectionViewController, Storyboarded  
   override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     viewModel?.showArtObjectDetails(index: indexPath.row)
   }
-  
 }
 
 // MARK: - CollectionViewControllerProtocol
@@ -89,23 +84,24 @@ extension MuseumCollectionViewController: CollectionViewControllerProtocol {
     print("Error: \(error)")
   }
   
-  func displayArtObjects(_ viewModel: [DisplayArtObject]) {
+  func displayInitialArtObjects(_ viewModel: [DisplayArtObject]) {
+    activityIndicator?.removeFromSuperview()
+    artObjects.append(contentsOf: viewModel)
+    collectionView?.reloadData()
+  }
+  
+  func displayNextArtObjects(_ viewModel: [DisplayArtObject]) {
     activityIndicator?.removeFromSuperview()
     let currentRow = artObjects.count
     artObjects.append(contentsOf: viewModel)
-    if currentPage == 0 {
-      collectionView?.reloadData()
-    } else {
-      collectionView.performBatchUpdates({ () -> Void in
-        var temp = [IndexPath]()
-        
-        for index in 0...(viewModel.count - 1) {
-          temp.append(IndexPath(row: currentRow + index, section: 0))
-        }
-        collectionView.insertItems(at: temp)
-        
-      }, completion: nil)
-    }
+    collectionView.performBatchUpdates({ () -> Void in
+      var newIndexPaths = [IndexPath]()
+      
+      for index in 0...(viewModel.count - 1) {
+        newIndexPaths.append(IndexPath(row: currentRow + index, section: 0))
+      }
+      collectionView.insertItems(at: newIndexPaths)
+    }, completion: nil)
   }
 }
 

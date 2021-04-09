@@ -9,10 +9,13 @@ import Foundation
 
 protocol DetailsViewModelProtocol: class {
   func loadDetailsData()
+}
+
+protocol DetailsViewModelDelegateProtocol: class {
   func onDetailsDataLoadCompleted(result: Result<ArtObject, Swift.Error>)
 }
 
-class DetailsListViewModel: DetailsViewModelProtocol {
+class DetailsListViewModel {
   private var dataModel: DetailsModelProtocol
   
   // Your viewController
@@ -38,7 +41,17 @@ class DetailsListViewModel: DetailsViewModelProtocol {
     
     return displayModel
   }
-  
+}
+
+// MARK: - DetailsViewModelProtocol
+extension DetailsListViewModel: DetailsViewModelProtocol {
+  func loadDetailsData() {
+    dataModel.loadDetailsData(objectNumber: objectNumber)
+  }
+}
+
+// MARK: - DetailsViewModelDelegateProtocol
+extension DetailsListViewModel: DetailsViewModelDelegateProtocol {
   func onDetailsDataLoadCompleted(result: Result<ArtObject, Swift.Error>) {
     switch result {
     case .failure(let error) :
@@ -52,9 +65,5 @@ class DetailsListViewModel: DetailsViewModelProtocol {
         self?.delegate?.displayDetailsArtObject(displayModel)
       }
     }
-  }
-  
-  func loadDetailsData() {
-    dataModel.loadDetailsData(objectNumber: objectNumber)
   }
 }

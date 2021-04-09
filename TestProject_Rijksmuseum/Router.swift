@@ -17,8 +17,8 @@ class AppRouter: Routing {
   @discardableResult
   func start() -> UIViewController {
     
-    let model = ArtObjectsListModel(networkService: NetworkService())
-    let viewModel = ArtObjectsListViewModel(dataModel: model)
+    let model = ListModel(networkService: NetworkService())
+    let viewModel = ListViewModel(dataModel: model)
     let vc = MuseumCollectionViewController.instantiate()
     
     vc.viewModel = viewModel

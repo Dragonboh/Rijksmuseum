@@ -15,7 +15,7 @@ class DetailsModel: DetailsModelProtocol {
   private var networkService: NetworkServiceProtocol
   
   // Your viewModel
-  weak var delegate: DetailsViewModelProtocol?
+  weak var delegate: DetailsViewModelDelegateProtocol?
   
   init(networkService: NetworkServiceProtocol) {
     self.networkService = networkService

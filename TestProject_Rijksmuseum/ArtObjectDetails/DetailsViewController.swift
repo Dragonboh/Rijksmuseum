@@ -24,6 +24,7 @@ class DetailsViewController: UIViewController, Storyboarded{
   @IBOutlet weak var descriptionLabel: UILabel!
   
   private var activityIndicator: UIActivityIndicatorView?
+  
   var viewModel: DetailsListViewModel?
   
   override func viewDidLoad() {
@@ -56,9 +57,16 @@ extension DetailsViewController: DetailsViewControllerDelegate {
     objectNumber.text = viewModel.identification.objectNumber
     descriptionLabel.text = viewModel.identification.description
     
+    activityIndicator = UIActivityIndicatorView(style: .large)
+    activityIndicator?.color = UIColor.white
+    imageView.addSubview(activityIndicator!)
+    activityIndicator!.frame = imageView.bounds
+    activityIndicator!.startAnimating()
+    
     AF.request(viewModel.imageUrl).responseImage { response in
       if case .success(let image) = response.result {
         DispatchQueue.main.async { [weak self] in
+          self?.activityIndicator?.removeFromSuperview()
           self?.imageView.image = image
         }
       }
